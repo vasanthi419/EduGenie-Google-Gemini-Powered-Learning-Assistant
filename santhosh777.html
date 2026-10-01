@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduGenie - AI Learning Assistant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f4f7f6;
+    }
+    .chat-container {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    #chat-box {
+      height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+    }
+    .message { margin-bottom: 10px; }
+    .user { color: #007bff; font-weight: bold; }
+    .bot { color: #28a745; font-weight: bold; }
+    .input-group { display: flex; gap: 10px; }
+    input { flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+    button { padding: 10px 15px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    button:disabled { background: #ccc; }
+  </style>
+</head>
+<body>
+
+  <div class="chat-container">
+    <h2>EduGenie AI Tutor 🎓</h2>
+    <div id="chat-box"></div>
+    <div class="input-group">
+      <input type="text" id="user-input" placeholder="Ask a topic, problem, or study question..." />
+      <button id="send-btn">Ask</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
